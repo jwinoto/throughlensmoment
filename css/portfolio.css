@@ -26,7 +26,7 @@ li{
 }
 
 .footer{
-    height: 70px;
+    height: 85px;
     
     font-size: 14px;
 }
@@ -63,6 +63,10 @@ body {
 nav{
     height: 50px;
     z-index: 1000;
+}
+
+.bg-secondary {
+    background: linear-gradient(135deg, rgb(57, 53, 53), rgb(199, 193, 193));
 }
 
 main{

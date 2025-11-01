@@ -19,7 +19,7 @@ li{
       
     width: 75%;
     height: auto;
-    opacity: 60%;
+    
     
 }
 
@@ -67,10 +67,33 @@ main{
     nav {
         height: 55px;
     }
-
+    
     .img-fluid {
-        width: 40%;
+        width: 90%;
+        padding: 0;
+        margin: 0;
+        
+    }
+    
+    
+    
+    .dropdown-menu    
+     {
+        background-color: white ;
     }
 
+    .navbar-nav {
+        background-color: white !important;
+        margin-top: 5px;
+                
+    }    
+
+    .navbar-brand {
+        padding-left: 10px;
+    }
+    
+    .dropdown-item:hover {
+        color: blue;
+    }
     
 }

@@ -82,5 +82,21 @@ main{
 
     nav{
         height: 55px;
+        padding: 10px;
+    }
+    .dropdown-menu    
+     {
+        background-color: white ;
+    }
+
+    .navbar-nav {
+        background-color: white !important;
+    
+    }
+    .navbar-brand {
+        padding-left: 10px;
+    }
+    .dropdown-item:hover {
+        color: blue;
     }
 }

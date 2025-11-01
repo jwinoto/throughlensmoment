@@ -1,24 +1,54 @@
 h2{
     font-size: 45px;
-    padding: 20px;
+    padding: 20px 20px 20px 0;
 }
 
 
 .img-fluid{
-    border: solid 2px black;  
+     
     width: 70%;
     height: auto;
+    transition: transform 2s ease;
+    transform-style: preserve-3d;
+    animation: spin 2s linear forwards;
 }
 
-img:hover{
-    opacity: 70%;
+@keyframes spin {
+    from { 
+        transform: rotate3d(1,1,0,0deg) scale3d(0.5,0.5,0.5);
+    }
+    to {
+        transform: rotate3d(1,0,1,30deg) scale3d(0.8,0.8,0.8);
+    }
 }
 
+.tekst {
+    opacity: 0;
+    transition: opacity 0,6s ease-in-out;
+    animation: slideIn 1s forwards;
+    animation-delay: 2s;
+}
 
+@keyframes slideIn{
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn {
+    background: linear-gradient(120deg, transparent, black, transparent);
+    border: none;
+}
 p{
     font-size: 16px;
     color: black;
     margin: 10px;
+    padding-bottom: 10px;
 }
 
 nav{
@@ -26,16 +56,18 @@ nav{
     height: 50px;
 }
 
+
+
 li{
     padding: 10px;
 }
 
 
 .nav-link:hover{
-    color: lightblue;
+    color: blue;
 }
 .nav-link.active:hover {
-    color: lightblue;
+    color: blue;
 }
 
 .bg-secondary {
@@ -80,13 +112,39 @@ body {
 
 @media  screen and (max-width: 600px) {
     .img-fluid {
-        width: 40%;
+        margin: 20px 0;
+        width: 50%;
         height: auto;
+        z-index: 1;
+    }
+
+    .tekst {
+        margin: 20px 0;
     }
 
     nav {
         height: 55px;
+        z-index: 10;
+    }
+    
+    .dropdown-menu    
+     {
+        background-color: white ;
     }
 
+    .navbar-nav {
+        background-color: white !important;
+        margin-top: 5px;
+        
+        
+    }
+
+    .navbar-brand {
+        padding-left: 10px;
+    }
+    
+    .dropdown-item:hover {
+        color: blue;
+    }
     
 }

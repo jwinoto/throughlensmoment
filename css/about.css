@@ -18,9 +18,7 @@ li{
 .img-fluid{
       
     width: 75%;
-    height: auto;
-    
-    
+    height: auto;        
 }
 
 
@@ -58,6 +56,9 @@ footer{
 
 nav{
     height: 50px;
+}
+.navbar-brand {
+    margin-left: 20px;
 }
 
 main{
